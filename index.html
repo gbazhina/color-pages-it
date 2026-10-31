@@ -32,7 +32,10 @@ a[style*="padding"]:hover{transform:translateY(-2px)}
 
 <header style="max-width: 1200px; margin: 0 auto; padding: 24px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
 <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #A9A39A">~/код-кофе-и-дедлайны <span style="color: #F2C94C">$</span> open book.pdf</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center">
+<a href="#teams" style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #D6D0C6; text-decoration: none; padding: 12px 4px">Для компаний</a>
 <a href="#buy" style="font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 600; text-decoration: none; padding: 12px 18px; border: 1px solid #3A3D46; border-radius: 10px; color: #EDE8DF">Купить PDF · 599 ₽</a>
+</div>
 </header>
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
@@ -206,15 +209,51 @@ a[style*="padding"]:hover{transform:translateY(-2px)}
 </div>
 </section>
 
-<section style="border-top: 1px solid #2A2D35">
-<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
-<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(26px, 3vw, 36px); line-height: 1.15">Подарок для всей команды</h2>
-<p style="margin: 0; font-size: 18px; color: #D6D0C6">Для компаний — PDF для всего офиса или печатные экземпляры к Новому году. Можно добавить ваш логотип на обложку.</p>
+<section id="teams" style="border-top: 1px solid #2A2D35">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #F2C94C">// для компаний</p>
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 48px); line-height: 1.1">Подарок для всей команды</h2>
+<p style="margin: 0; font-size: 19px; color: #D6D0C6">Мерч, который не уйдёт в ящик стола. Разработчики узнают в книге себя, а тестировщики и дизайнеры — своих коллег.</p>
 </div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<div style="background: #1F2229; border: 1px solid #2A2D35; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9A39A">01 · быстро</p>
+<p style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2">PDF для команды</p>
+<p style="margin: 0; font-size: 16px; color: #D6D0C6">Право печатать страницы для всех сотрудников компании.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #A9A39A">
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Файл в тот же день</span></li>
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Подходит для удалённых и распределённых команд</span></li>
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Можно устроить раскраску на корпоративе</span></li>
+</ul>
+</div>
+<div style="background: #1F2229; border: 1px solid #2A2D35; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9A39A">02 · на бумаге</p>
+<p style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2">Печатные экземпляры</p>
+<p style="margin: 0; font-size: 16px; color: #D6D0C6">Книги формата A4, 50 страниц, тираж под вашу команду.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #A9A39A">
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>От 20 экземпляров</span></li>
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Доставка в офис</span></li>
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Чтобы успеть к Новому году, закажите до конца ноября</span></li>
+</ul>
+</div>
+<div style="background: #1F2229; border: 1px solid #F2C94C; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A9A39A">03 · мерч</p>
+<p style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2">С логотипом компании</p>
+<p style="margin: 0; font-size: 16px; color: #D6D0C6">Те же книги, но с вашим логотипом на обложке.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #A9A39A">
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Подготовлю макет обложки за 2–3 дня</span></li>
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Покажу макет до печати</span></li>
+<li style="display: flex; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; color: #F2C94C" aria-hidden="true">+</span><span>Хорошо подходит в welcome-пакет для новичков</span></li>
+</ul>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: center; justify-content: space-between; background: #1F2229; border-radius: 16px; padding: 28px">
+<p style="margin: 0; font-size: 18px; flex: 1 1 360px; min-width: 0">Напишите, сколько человек в команде, — пришлю стоимость и сроки в тот же день.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="https://t.me/gbazhina" style="text-decoration: none; color: #EDE8DF; font-weight: 500; font-size: 18px; padding: 16px 26px; border-radius: 12px; border: 1px solid #3A3D46">Написать в Telegram</a>
-<a href="mailto:gbazhina@ya.ru" style="text-decoration: none; color: #EDE8DF; font-weight: 500; font-size: 18px; padding: 16px 26px; border-radius: 12px; border: 1px solid #3A3D46">gbazhina@ya.ru</a>
+<a href="https://t.me/gbazhina" style="text-decoration: none; font-weight: 600; font-size: 18px; padding: 16px 26px; border-radius: 12px; background: #F2C94C; color: #15171C">Рассчитать в Telegram</a>
+<a href="mailto:gbazhina@ya.ru?subject=%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D0%B0%D1%81%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B" style="text-decoration: none; font-weight: 600; font-size: 18px; padding: 16px 26px; border-radius: 12px; color: #EDE8DF; border: 1px solid #3A3D46; font-weight: 500">gbazhina@ya.ru</a>
+</div>
 </div>
 </div>
 </section>
