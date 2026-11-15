@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>КП — Код, кофе и дедлайны</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 13px/1.45 'Segoe UI', Arial, sans-serif; color: #1e1e1e; }
+  .page { width: 210mm; height: 297mm; padding: 14mm 16mm; display: flex; flex-direction: column; }
+  .mono { font-family: 'JetBrains Mono', Consolas, monospace; }
+  .cmt { color: #6a9955; }
+  .kw  { color: #0000ff; }
+  .str { color: #a31515; }
+
+  header { display: flex; gap: 10mm; align-items: flex-start; }
+  header .text { flex: 1; }
+  h1 { font: 700 26px/1.15 'JetBrains Mono', Consolas, monospace; margin: 0 0 3mm; }
+  .sub { font-size: 14px; margin: 0 0 5mm; }
+  header img.photo { width: 62mm; height: 82mm; object-fit: cover; border-radius: 3mm; }
+  .photo-cap { font-size: 10px; text-align: center; margin-top: 1.5mm; }
+
+  ul { margin: 0; padding-left: 5mm; }
+  li { margin-bottom: 1.5mm; }
+
+  h2 { font: 700 15px 'JetBrains Mono', Consolas, monospace; margin: 7mm 0 3mm; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 2.5mm 3mm; border-bottom: 1px solid #ddd; text-align: left; }
+  th { background: #f3f3f3; font-weight: 600; }
+  td.price { font-weight: 700; white-space: nowrap; }
+  .note { font-size: 11.5px; margin-top: 2mm; color: #555; }
+
+  .terms { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 8mm; }
+  .terms div b { display: block; }
+
+  .deadline { margin-top: 6mm; padding: 4mm 5mm; border-left: 3px solid #f0a500; background: #fff8e6; font-size: 14px; }
+
+  footer { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid #ddd; padding-top: 4mm; }
+  footer img { width: 26mm; height: 26mm; }
+  .contacts b { font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="text">
+      <div class="mono cmt">// подарок команде к Новому году</div>
+      <h1>Код, кофе<br>и дедлайны</h1>
+      <p class="sub">Раскраска-антистресс для тех, у кого всё работало вчера</p>
+      <ul>
+        <li>50 страниц из жизни айтишников: прод в пятницу, CANNOT REPRODUCE, код-ревью и вечный кофе</li>
+        <li>Герои — разработчики Аня, Макс и Лео и кот Кэш</li>
+        <li>На каждой странице спрятана резиновая уточка</li>
+        <li>А4, пружина: книга лежит раскрытой, раскрашивать удобно</li>
+        <li>Логотип компании на обложке — по желанию</li>
+      </ul>
+    </div>
+    <div>
+      <img class="photo" src="proof-cover.jpeg" alt="Пробный экземпляр">
+      <div class="photo-cap mono cmt">// живой экземпляр из типографии</div>
+    </div>
+  </header>
+
+  <h2><span class="kw">const</span> price = {</h2>
+  <table>
+    <tr><th>Тираж</th><th>Цена за экземпляр</th><th>Пример</th></tr>
+    <tr><td>до 20 шт.</td><td class="price">990 ₽</td><td>15 шт. — 14 850 ₽</td></tr>
+    <tr><td>21–99 шт.</td><td class="price">790 ₽</td><td>50 шт. — 39 500 ₽</td></tr>
+    <tr><td>от 100 шт.</td><td class="price">650 ₽</td><td>100 шт. — 65 000 ₽</td></tr>
+  </table>
+  <p class="note">Логотип компании на обложке: +3 000 ₽ за весь заказ (не за экземпляр). В рознице книга стоит от 1 299 ₽.</p>
+
+  <h2>}</h2>
+  <div class="terms">
+    <div><b>Срок изготовления</b>7 дней после оплаты и согласования макета</div>
+    <div><b>Оплата</b>По счёту, без НДС. Самозанятая, чек выдаётся через «Мой налог»</div>
+    <div><b>Логотип</b>Пришлите в векторе (SVG, PDF, AI). Макет обложки согласуем до печати</div>
+    <div><b>Получение</b>Ульяновск — самовывоз или доставка; другие города — СДЭК, доставка оплачивается получателем</div>
+  </div>
+
+  <div class="deadline">
+  <b>Чтобы успеть к Новому году — оформите заказ до 15 декабря.</b><br>
+    Для доставки в другие города — до 10 декабря.
+  </div>
+
+  <footer>
+    <div class="contacts">
+      <b>Гульнара Бажина</b><br>
+      автор и иллюстратор, frontend-разработчик<br>
+      <span class="mono">t.me/gbazhina · gbazhina@ya.ru</span><br>
+      <span class="mono">gbazhina.github.io/color-pages-it</span>
+    </div>
+    <div style="text-align:center">
+      <img src="qr-teams.png" alt="QR">
+      <div class="mono cmt" style="font-size:10px">// фото и примеры страниц</div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
