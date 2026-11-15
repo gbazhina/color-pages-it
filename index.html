@@ -25,6 +25,11 @@ a{color:#F2C94C}a:hover{color:#FFE08A}
 a[style*="padding"]{transition:transform .15s ease, opacity .15s ease}
 a[style*="padding"]:hover{transform:translateY(-2px)}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}a[style*="padding"]:hover{transform:none}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:20px}
+.gallery figure{margin:0;background:#1e1e1e;border:1px solid #333;border-radius:8px;overflow:hidden}
+.gallery img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
+.gallery figcaption,.g-comment{font:13px/1.4 'JetBrains Mono',monospace;color:#6a9955}
+.gallery figcaption{padding:8px 12px}
 </style>
 </head>
 <body>
@@ -207,6 +212,31 @@ a[style*="padding"]:hover{transform:translateY(-2px)}
 <p style="margin: 0; font-size: 15px; color: #A9A39A">Хотите бумажную книгу? <a href="ССЫЛКА_RIDERO">Печатная версия на Ridero</a></p>
 -->
 </div>
+</section>
+
+<section id="gallery" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: stretch">
+  <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+    <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #6a9955">// пробный экземпляр из типографии, фото без обработки</p>
+    <h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 48px); line-height: 1.1"><span class="kw">const</span> proof = <span class="str">"уже напечатано"</span>;</h2>
+
+  <div class="gallery">
+    <figure>
+      <img src="img/proof-cover.jpeg" alt="Обложка раскраски «Код, кофе и дедлайны» на белой пружине" loading="lazy">
+      <figcaption>// А4, пружина, 52 страницы</figcaption>
+    </figure>
+    <figure>
+      <img src="img/proof-wome.jpeg" alt="Разворот WORKS ON MY MACHINE: Аня, Макс и кот Кэш" loading="lazy">
+      <figcaption>// мелкий текст пропечатан чётко</figcaption>
+    </figure>
+    <figure>
+      <img src="img/proof-spiral.jpeg" alt="Страница WHO WRITES BETTER CODE: кот-судья и утка в очках" loading="lazy">
+      <figcaption>// найдите утку: она есть на каждой странице</figcaption>
+    </figure>
+    <figure>
+      <img src="img/proof-round.jpeg" alt="Пружина крупным планом: рисунок не заходит под кольца" loading="lazy">
+      <figcaption>// рисунок не уходит под пружину</figcaption>
+    </figure>
+  </div>
 </section>
 
 <section id="teams" style="border-top: 1px solid #2A2D35">
